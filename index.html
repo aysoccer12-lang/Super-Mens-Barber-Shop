@@ -33,6 +33,10 @@
 
   <style>
     html { scroll-behavior: smooth; }
+    html,
+body {
+  overflow-x: hidden;
+}
     body { font-family: 'Inter', sans-serif; background: #fafafa; color: #111827; }
     h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; }
     .reveal { opacity: 0; transform: translateY(18px); transition: all .7s ease; }
@@ -125,8 +129,9 @@
                 <p class="text-sm text-ink/60 font-semibold">Open Daily</p>
               </div>
               <div class="bg-white border border-black/10 p-5 shadow-sm">
-            <p class="text-3xl font-heading font-bold">
-  505 Gladstone Ave
+       <p class="text-2xl sm:text-3xl font-heading font-bold leading-tight">
+  505<br>
+  Gladstone Ave
 </p>
               </div>
             </div>
@@ -192,71 +197,100 @@
       </div>
     </section>
 
-    <section id="about" class="py-20 lg:py-28 bg-white">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div class="reveal">
-            <p class="text-redbrand font-bold uppercase tracking-[0.25em] text-sm mb-4">About The Shop</p>
-            <h2 class="text-4xl sm:text-5xl font-bold uppercase mb-6">A local barber shop on Gladstone.</h2>
-            <p class="text-lg text-ink/75 leading-relaxed mb-6">
-              Super Men's Barber Shop is a neighborhood spot for clean haircuts, sharp fades, and friendly service in Ottawa.
-            </p>
-            <p class="text-lg text-ink/75 leading-relaxed mb-8">
-              Whether you are stopping in after work, getting ready for an event, or keeping your regular cut fresh, the focus is simple: good service and a clean result.
-            </p>
+ <section id="about" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="flex items-center gap-3 font-semibold">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-redbrand"></i>
-                Open 7 days
-              </div>
-              <div class="flex items-center gap-3 font-semibold">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-redbrand"></i>
-                Friendly service
-              </div>
-              <div class="flex items-center gap-3 font-semibold">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-redbrand"></i>
-                Classic barber shop
-              </div>
-              <div class="flex items-center gap-3 font-semibold">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-redbrand"></i>
-                Easy to reach
-              </div>
+      <div class="reveal">
+        <p class="text-redbrand font-bold uppercase tracking-[0.25em] text-sm mb-4">
+          About The Shop
+        </p>
+
+        <h2 class="text-4xl sm:text-5xl font-bold uppercase mb-6">
+          A local barber shop on Gladstone.
+        </h2>
+
+        <p class="text-lg text-ink/75 leading-relaxed mb-6">
+          Super Men's Barber Shop is a neighborhood spot for clean haircuts,
+          sharp fades, and friendly service in Ottawa.
+        </p>
+
+        <p class="text-lg text-ink/75 leading-relaxed mb-8">
+          Whether you are stopping in after work, getting ready for an event,
+          or keeping your regular cut fresh, the focus is simple:
+          good service and a clean result.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-center gap-3 font-semibold">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-redbrand"></i>
+            Open 7 days
+          </div>
+
+          <div class="flex items-center gap-3 font-semibold">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-redbrand"></i>
+            Friendly service
+          </div>
+
+          <div class="flex items-center gap-3 font-semibold">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-redbrand"></i>
+            Classic barber shop
+          </div>
+
+          <div class="flex items-center gap-3 font-semibold">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-redbrand"></i>
+            Easy to reach
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-soft border border-black/10 p-8 sm:p-10 reveal">
+        <h3 class="text-3xl font-bold uppercase mb-6">
+          Why Customers Come Back
+        </h3>
+
+        <div class="space-y-6">
+
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-full bg-redbrand text-white flex items-center justify-center shrink-0">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-bold uppercase">
+                Gladstone Location
+              </h4>
+
+              <p class="text-ink/65">
+                Located at 505 Gladstone Ave in Ottawa.
+              </p>
             </div>
           </div>
 
-          <div class="bg-soft border border-black/10 p-8 sm:p-10 reveal">
-            <h3 class="text-3xl font-bold uppercase mb-6">Why customers come back</h3>
-            <div class="space-y-6">
-              <div class="flex gap-4">
-                <div class="w-12 h-12 rounded-full bg-redbrand text-white flex items-center justify-center shrink-0">
-                  <i data-lucide="star" class="w-5 h-5"></i>
-                </div>
-                                
-              </div>
-                <div>
-                  <h4 class="text-xl font-bold uppercase">Gladstone location</h4>
-                  <p class="text-ink/65">Located at 505 Gladstone Ave in Ottawa.</p>
-                </div>
-              </div>
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-full bg-redbrand text-white flex items-center justify-center shrink-0">
+              <i data-lucide="clock" class="w-5 h-5"></i>
+            </div>
 
-              <div class="flex gap-4">
-                <div class="w-12 h-12 rounded-full bg-redbrand text-white flex items-center justify-center shrink-0">
-                  <i data-lucide="clock" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <h4 class="text-xl font-bold uppercase">Open every day</h4>
-                  <p class="text-ink/65">Open daily from 10:00 AM to 8:00 PM.</p>
-                </div>
-              </div>
+            <div>
+              <h4 class="text-xl font-bold uppercase">
+                Open Every Day
+              </h4>
+
+              <p class="text-ink/65">
+                Open daily from 10:00 AM to 8:00 PM.
+              </p>
             </div>
           </div>
 
         </div>
       </div>
-    </section>
 
-    <section id="gallery" class="py-20 lg:py-28 bg-paper">
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="py-20 lg:py-28 bg-paper">
       <div class="max-w-7xl mx-auto px-5 sm:px-8">
         <div class="text-center max-w-3xl mx-auto mb-14 reveal">
           <p class="text-redbrand font-bold uppercase tracking-[0.25em] text-sm mb-3">Gallery</p>
