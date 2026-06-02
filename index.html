@@ -345,7 +345,84 @@
         </div>
       </div>
     </section>
+<section id="booking" class="py-20 lg:py-28 bg-white">
 
+  <div class="max-w-3xl mx-auto px-5 sm:px-8">
+
+    <div class="text-center mb-10">
+      <h2 class="text-4xl sm:text-5xl font-bold uppercase mb-4">
+        Book Your Cut
+      </h2>
+
+      <p class="text-lg text-ink/65">
+        Submit your preferred date and time and we'll contact you to confirm.
+      </p>
+    </div>
+
+    <form
+      action="https://formspree.io/f/mojbgbee"
+      method="POST"
+      class="bg-soft border border-black/10 p-8 rounded-lg space-y-5">
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required
+        class="w-full border border-gray-300 p-4 rounded-lg">
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        required
+        class="w-full border border-gray-300 p-4 rounded-lg">
+
+      <input
+        type="date"
+        name="preferred_date"
+        required
+        class="w-full border border-gray-300 p-4 rounded-lg">
+
+      <input
+        type="time"
+        name="preferred_time"
+        required
+        class="w-full border border-gray-300 p-4 rounded-lg">
+
+      <select
+        name="service"
+        required
+        class="w-full border border-gray-300 p-4 rounded-lg">
+
+        <option value="">Select a Service</option>
+        <option>Haircut</option>
+        <option>Fade</option>
+        <option>Haircut + Beard</option>
+        <option>Beard Trim</option>
+        <option>Kids Haircut</option>
+
+      </select>
+
+      <textarea
+        name="notes"
+        rows="4"
+        placeholder="Additional Notes (Optional)"
+        class="w-full border border-gray-300 p-4 rounded-lg"></textarea>
+
+      <button
+        type="submit"
+        class="w-full bg-redbrand text-white py-4 font-bold uppercase tracking-widest hover:bg-darkred transition">
+
+        Request Appointment
+
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
     <section id="location" class="py-20 lg:py-28 bg-ink text-white">
       <div class="max-w-7xl mx-auto px-5 sm:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
