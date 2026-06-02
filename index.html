@@ -366,55 +366,27 @@
       method="POST"
       class="bg-soft border border-black/10 p-8 rounded-lg space-y-5">
 
-     <input
-  type="text"
-  name="name"
-  placeholder="Full Name"
-  required
-  class="w-full border border-gray-300 p-4 rounded-lg">
+<input type="text" name="name">
 
-<input
-  type="tel"
-  name="phone"
-  placeholder="Phone Number"
-  required
-  class="w-full border border-gray-300 p-4 rounded-lg">
+<input type="tel" name="phone">
 
-<input
-  type="date"
-  name="preferred_date"
-  required
-  class="w-full border border-gray-300 p-4 rounded-lg">
+<input type="date" name="preferred_date">
 
-<input
-  type="time"
-  name="preferred_time"
-  required
-  class="w-full border border-gray-300 p-4 rounded-lg">
+<input type="time" name="preferred_time">
 
-<select
-  name="service"
-  required
-  class="w-full border border-gray-300 p-4 rounded-lg">
-
+<select name="service">
   <option value="">Choose a Service</option>
   <option>Haircut</option>
   <option>Haircut + Beard</option>
   <option>Beard Trim</option>
   <option>Kids Haircut</option>
+</select>
 
+<textarea name="notes"></textarea>
 
-      <select
-        name="service"
-        required
-        class="w-full border border-gray-300 p-4 rounded-lg">
-
-        <option value="">Select a Service</option>
-        <option>Haircut</option>
-        <option>Haircut + Beard</option>
-        <option>Beard Trim</option>
-        <option>Kids Haircut</option>
-
+<button type="submit">
+  Request Appointment
+</button>
       </select>
 
       <textarea
